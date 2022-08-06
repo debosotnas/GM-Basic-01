@@ -2,17 +2,16 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './style.css';
 
-import { HomePage } from './pages';
+import { HomePage, NewGamePage, GamePage } from './pages';
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-      {/* <Routes>
+    <div className="container my-4">
+      <Routes>
         <Route path="/" element={<HomePage />} />
-      </Routes> */}
-      <HomePage />
+        <Route path="/new-game" element={<NewGamePage />} />
+        <Route path="/game" element={<GamePage />} />
+      </Routes>
     </div>
   );
 }
