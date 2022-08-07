@@ -6,7 +6,7 @@ import { HomePage, NewGamePage, GamePage } from './pages';
 
 export default function App() {
   return (
-    <div className="container my-4">
+    <div className="container mb-4 pt-4">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/new-game" element={<NewGamePage />} />

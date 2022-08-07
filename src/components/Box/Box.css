@@ -1,0 +1,59 @@
+/* background-color: #907acec7; */
+/* color OK */
+/* background-color: #c8b8f5c7; */
+
+:root {
+  --opacity: 0.5;
+  --angle: 0deg;
+}
+
+.box {
+  /* Animated border from https://web.dev/css-border-animations/ */
+  --border-size: 1px;
+  border-radius: 8px;
+
+  border: var(--border-size) dotted transparent;
+  background-image: linear-gradient(to right bottom, #0b0977fa, #290233),
+    conic-gradient(
+      from var(--angle),
+      #0e97d660 0deg 90deg,
+      #9700fb7a 90deg 180deg,
+      #cf37f5b4 180deg 270deg,
+      #60dbe481 270deg 360deg
+    );
+
+  /*
+      #33a2d5 0deg 90deg,
+      #9700fb 90deg 180deg,
+      #cf37f5 180deg 270deg,
+      #60dbe4 270deg 360deg
+    */
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: rotate 18s linear infinite, opacityChange 3s infinite alternate;
+
+  box-shadow: 0px 0px 25px #000;
+}
+
+@property --opacity {
+  syntax: '<number>';
+  initial-value: 0.5;
+  inherits: false;
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes opacityChange {
+  to {
+    --opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
