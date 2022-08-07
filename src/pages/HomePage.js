@@ -1,7 +1,24 @@
 import React from 'react';
-// import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import { Box } from '../components';
+import { Box, HistoryCardContainer } from '../components';
+
+const falcon = `
+                      c==o
+                    _/____\\_
+              _.,--'" ||^ || "z._
+             /_/^ ___\\||  || _/o\\ "-._
+           _/  ]. L_| || .||  \\_/_  . _--._
+          /_~7  _ . " ||. || /] \\ ]. (_)  . "--.
+        |__7~.(_)_ []|+--+|/____T_____________L|
+        |__|  _^(_) /^   __\\____ _   _|
+        |__| (_){_) J ]K{__ L___ _   _]
+        |__| . _(_) \\v     /__________|________
+        l__l_ (_). []|+-+-<\\^   L  . _   - ---L|
+         \\__\\    __. ||^l  \\Y] /_]  (_) .  _,--'
+           \\~_]  L_| || .\\ .\\\\/~.    _,--'"
+            \\_\\ . __/||  |\\  \\-+-<'"
+               "---._|J__L|X o~~|[\\\\
+                     \\____/ \\___|[//`;
 
 export default function HomePage() {
   return (
@@ -18,38 +35,27 @@ export default function HomePage() {
       <div className="row">
         <div className="col-md-8">
           <Box>
-            <h3 className="mt-3">¿Cómo jugar?</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sit amet diam malesuada, viverra sem vel, semper ante. Phasellus
-              molestie tincidunt justo non vestibulum. Donec id pellentesque dia
-            </p>
-          </Box>
-          <Box>
-            <h3 className="mt-3">Titulo 3</h3>
-            <p>
-              sed feugiat est. Donec eget pellentesque libero, id sodales metus.
-              Nulla urna massa, hendrerit in mollis ac, porta non neque. Cras
-              nec tristique dolor, id efficitur nibh. Cras dui risus, dapibus eu
-              blandit eget, malesuada ut libero. Aliquam mattis, nunc
-              consectetur ultrices semper, lorem risus condimentum erat, non
-              rhoncus odio ligula quis nibh. Nunc mattis cursus tortor, eu
-              convallis erat
-            </p>
+            <h2 className="mt-1">History</h2>
+            <HistoryCardContainer></HistoryCardContainer>
           </Box>
         </div>
         <div className="col-md-4">
-          <Box>
+          <Box className="text-center">
+            <div className="pre-icon pre-small mb-3">
+              <pre>{falcon}</pre>
+            </div>
             <Link to="/new-game" className="btn btn-swapi-main">
-              Iniciar nuevo juego
+              Start new game!
             </Link>
-            <h4 className="mt-4">Últimos juegos</h4>
+          </Box>
+          <Box>
+            <h4 className="mt-2">High scores</h4>
             <ul>
-              <li>Pos 1</li>
-              <li>Pos 2</li>
-              <li>Pos 3</li>
-              <li>Pos 4</li>
-              <li>Pos 5</li>
+              <li>Ruffo / 10.500</li>
+              <li>Sarki / 10.300</li>
+              <li>PopDylan / 9.050</li>
+              <li>Roco / 7100</li>
+              <li>Zyppy / 6200</li>
             </ul>
           </Box>
         </div>
