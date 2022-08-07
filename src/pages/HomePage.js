@@ -7,8 +7,11 @@ export default function HomePage() {
   return (
     <>
       <div className="row">
-        <div className="col text-center">
-          <h1>Home page!</h1>
+        <div className="col text-center logo-wrapper d-flex align-items-center justify-content-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/debosotnas/GM-Basic-01@main/src/assets/imgs/swapi-logo.svg"
+            alt="swapi batlle logo"
+          />
         </div>
       </div>
 
@@ -37,7 +40,7 @@ export default function HomePage() {
         </div>
         <div className="col-md-4">
           <Box>
-            <Link to="/new-game" className="btn btn-success">
+            <Link to="/new-game" className="btn btn-swapi-main">
               Iniciar nuevo juego
             </Link>
             <h4 className="mt-4">Últimos juegos</h4>

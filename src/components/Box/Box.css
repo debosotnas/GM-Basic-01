@@ -22,13 +22,6 @@
       #60dbe481 270deg 360deg
     );
 
-  /*
-      #33a2d5 0deg 90deg,
-      #9700fb 90deg 180deg,
-      #cf37f5 180deg 270deg,
-      #60dbe4 270deg 360deg
-    */
-
   background-origin: border-box;
   background-clip: padding-box, border-box;
   animation: rotate 18s linear infinite, opacityChange 3s infinite alternate;

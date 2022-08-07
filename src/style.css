@@ -37,3 +37,21 @@ h6 {
 * {
   color: #ffe7e7;
 }
+
+.logo-wrapper {
+  min-height: 200px;
+}
+.logo-wrapper img {
+  max-width: 500px;
+}
+
+.btn-swapi-main {
+  background-image: linear-gradient(to right bottom, #3533acfa, #5d1070);
+  border-width: 1px;
+  color: #ebabff;
+}
+.btn-swapi-main:hover {
+  border-color: #ef9eff67;
+  color: #faebff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
+}
