@@ -1,24 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, HistoryCardContainer } from '../components';
-
-const falcon = `
-                      c==o
-                    _/____\\_
-              _.,--'" ||^ || "z._
-             /_/^ ___\\||  || _/o\\ "-._
-           _/  ]. L_| || .||  \\_/_  . _--._
-          /_~7  _ . " ||. || /] \\ ]. (_)  . "--.
-        |__7~.(_)_ []|+--+|/____T_____________L|
-        |__|  _^(_) /^   __\\____ _   _|
-        |__| (_){_) J ]K{__ L___ _   _]
-        |__| . _(_) \\v     /__________|________
-        l__l_ (_). []|+-+-<\\^   L  . _   - ---L|
-         \\__\\    __. ||^l  \\Y] /_]  (_) .  _,--'
-           \\~_]  L_| || .\\ .\\\\/~.    _,--'"
-            \\_\\ . __/||  |\\  \\-+-<'"
-               "---._|J__L|X o~~|[\\\\
-                     \\____/ \\___|[//`;
+import { FALCON } from '../assets/data/chars';
 
 export default function HomePage() {
   return (
@@ -42,7 +25,7 @@ export default function HomePage() {
         <div className="col-md-4">
           <Box className="text-center">
             <div className="pre-icon pre-small mb-3">
-              <pre>{falcon}</pre>
+              <pre>{FALCON}</pre>
             </div>
             <Link to="/new-game" className="btn btn-swapi-main">
               Start new game!
