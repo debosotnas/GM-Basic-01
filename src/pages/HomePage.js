@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SwapiData from '../api/Swapi.js';
 import { Link } from 'react-router-dom';
-import { Box, HistoryCardContainer } from '../components';
+import { Box } from '../components';
 import { FALCON } from '../assets/data/chars';
 
 export default function HomePage() {
@@ -17,19 +17,26 @@ export default function HomePage() {
   return (
     <>
       <div className="row">
-        <div className="col text-center logo-wrapper d-flex align-items-center justify-content-center">
-          <img
-            src="https://cdn.jsdelivr.net/gh/debosotnas/GM-Basic-01@main/src/assets/imgs/swapi-logo.svg"
-            alt="swapi batlle logo"
-          />
-        </div>
-      </div>
-
-      <div className="row">
         <div className="col-md-8">
           <Box>
-            <h2 className="mt-1">History</h2>
-            <HistoryCardContainer></HistoryCardContainer>
+            <h2 className="mt-2">¡Elige tu próxima aventura!</h2>
+
+            <div className="adventure-choose-box adventure-left">
+              <div className="adventure-circle"></div>
+              Modo Versus
+            </div>
+            <div className="adventure-choose-box adventure-right">
+              <div className="adventure-circle"></div>
+              Modo Story
+            </div>
+            <div className="adventure-choose-box adventure-left">
+              <div className="adventure-circle"></div>
+              Modo Arcade
+            </div>
+            <div className="adventure-choose-box adventure-right">
+              <div className="adventure-circle"></div>
+              Modo-R<span>(random)</span>
+            </div>
           </Box>
         </div>
         <div className="col-md-4">
@@ -38,11 +45,21 @@ export default function HomePage() {
               <pre>{FALCON}</pre>
             </div>
             <Link to="/new-game" className="btn btn-swapi-main">
-              Start new game!
+              Comenzar juego Modo-R!
             </Link>
           </Box>
           <Box>
-            <h4 className="mt-2">High scores</h4>
+            <h4 className="mt-2 text-center">Puntajes más altos</h4>
+            <ul>
+              <li>Ruffo / 10.500</li>
+              <li>Sarki / 10.300</li>
+              <li>PopDylan / 9.050</li>
+              <li>Roco / 7100</li>
+              <li>Zyppy / 6200</li>
+            </ul>
+          </Box>
+          <Box>
+            <h4 className="mt-2 text-center">Mejores jugadores</h4>
             <ul>
               <li>Ruffo / 10.500</li>
               <li>Sarki / 10.300</li>
