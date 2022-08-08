@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Box, HistoryCardContainer } from '../components';
 import { FALCON } from '../assets/data/chars';
 
 export default function HomePage() {
+  const [people, setPeople] = useState([]);
+  useEffect(() => {
+    async function getPeople() {
+      const data = await SwapiData.getPeople();
+      console.log('>> data: ', data);
+    }
+    getPeople();
+  }, []);
+
   return (
     <>
       <div className="row">

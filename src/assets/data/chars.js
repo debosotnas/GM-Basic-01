@@ -193,7 +193,8 @@ export const HISTORY_DATA = [
   {
     id: 7,
     title: '',
-    description: 'Buenos tiempos, aquellos eran...',
+    description:
+      '...entonces, recordar debes: El miedo es el camino hacia el Lado Oscuro; el miedo lleva a la ira, la ira lleva al odio, y el odio...',
     image: `
                     __.-._
                     '-._"7'
@@ -205,40 +206,7 @@ export const HISTORY_DATA = [
   {
     id: 8,
     title: '',
-    description:
-      'Oh.. maestro Yoda... Es un raro pero verdadero placer encontrarlo aquí',
-    image: `
-          /~\\ 
-         (O O)
-         _\\=/_ 
-        /  _  \\
-       //|/.\\|\\\\
-      ||  \\_/  ||
-      || |\\ /| ||
-       # \\_ _/ # 
-         | | |   
-         | | |   
-         []|[]   
-         | | |   
-       _/_]_[_\\_
-    `,
-  },
-  {
-    id: 9,
-    title: '',
-    description: 'pero... cómo... Un misterio en este lugar parece haber',
-    image: `
-                    __.-._
-                    '-._"7'
-                    /'.-c
-                    |  /T
-                    _)_/LI
-    `,
-  },
-  {
-    id: 10,
-    title: '',
-    description: '...uhm, explicar como he llegado aquí no puedo',
+    description: '...uhm...',
     image: `
                      _.-.__     
                     '7"_.-'
@@ -248,10 +216,9 @@ export const HISTORY_DATA = [
     `,
   },
   {
-    id: 11,
+    id: 9,
     title: '',
-    description:
-      'Oh.. maestro Yoda... Es un raro pero verdadero placer encontrarlo aquí',
+    description: 'Oh.. maestro Yoda... ¿Cómo llegó hasta aquí?',
     image: `
           /~\\ 
          (O O)
@@ -268,9 +235,97 @@ export const HISTORY_DATA = [
        _/_]_[_\\_
     `,
   },
-
+  {
+    id: 10,
+    title: '',
+    description:
+      'uhm... sorprendido me encuentro, y lo que preguntas parece imposible poder saberlo',
+    image: `
+                    __.-._
+                    '-._"7'
+                    /'.-c
+                    |  /T
+                    _)_/LI
+    `,
+  },
+  {
+    id: 11,
+    title: '',
+    description:
+      '...uhm... sin embargo, convencido estoy que el universo ha de respuestas tener',
+    image: `
+                     _.-.__     
+                    '7"_.-'
+                      c-.'\\
+                      T\\   |
+                     IL\\_(_ 
+    `,
+  },
   {
     id: 12,
+    title: '',
+    description:
+      'Me pregunto si este evento tiene relación con el rápido esplendor de hace unos minutos...',
+    image: `
+          /~\\ 
+         (O O)
+         _\\=/_ 
+        /  _  \\
+       //|/.\\|\\\\
+      ||  \\_/  ||
+      || |\\ /| ||
+       # \\_ _/ # 
+         | | |   
+         | | |   
+         []|[]   
+         | | |   
+       _/_]_[_\\_
+    `,
+  },
+  {
+    id: 13,
+    title: '',
+    description:
+      '...lo cierto es que estaba conversando con mi amigo R2D2 cuando derrepente usted apareció en su lugar... qué asombrosa situación',
+    image: `
+        _-/~\\ 
+      // (· ·)
+     //  _\\=/_ 
+     \\\\ /  _  \\
+      \\//|/.\\|\\\\
+          \\_/  ||
+         |\\ /| ||
+         \\_ _/ # 
+         | | |   
+         | | |   
+         []|[]   
+         | | |   
+       _/_]_[_\\_
+    `,
+  },
+  {
+    id: 13,
+    title: '',
+    description:
+      '...lo cierto es que estaba conversando con mi amigo R2D2 cuando derrepente usted apareció en su lugar... qué asombrosa situación',
+    image: `
+          /~\\ 
+   \\/    (O O)
+    \\\\   _\\=/_ 
+     \\\\ /  _  \\
+      \\//|/.\\|\\\\
+          \\_/  ||
+         |\\ /| ||
+         \\_ _/ # 
+         | | |   
+         | | |   
+         []|[]   
+         | | |   
+       _/_]_[_\\_
+    `,
+  },
+  {
+    id: 14,
     title: 'abc 2',
     description: 'desc 2',
     image: `
