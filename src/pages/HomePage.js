@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import SwapiData from '../api/Swapi.js';
 import { Link } from 'react-router-dom';
 import { Box, HistoryCardContainer } from '../components';
 import { FALCON } from '../assets/data/chars';

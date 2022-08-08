@@ -1,5 +1,5 @@
 import React from 'react';
-import './HistoryCard.css';
+import './StoryCard.css';
 
 function getPreWidth(imgPre) {
   const countChar = imgPre.split('\n').reduce((prev, curr) => {
@@ -8,7 +8,7 @@ function getPreWidth(imgPre) {
   return `${countChar * 5.77777 + 10}px`;
 }
 
-export default function HistoryCard(props) {
+export default function StoryCard(props) {
   return (
     <div className="history-card-body">
       {props.title && <h4>{props.title}</h4>}

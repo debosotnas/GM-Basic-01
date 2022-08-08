@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import HistoryCard from './Card';
+import StoryCard from './Card';
 
-export default function HistoryCardList({ data }) {
+export default function StoryCardList({ data }) {
   const [currCard, setCurrCard] = useState(0);
 
   const loadNextCurrCard = (currIndex) => {
@@ -32,7 +32,7 @@ export default function HistoryCardList({ data }) {
             >
               &lt;
             </div>
-            <HistoryCard {...page} />
+            <StoryCard {...page} />
             <div
               className={`arrow right ${
                 index + 1 >= data.length ? 'hide-arrow' : ''

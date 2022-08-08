@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './style.css';
 
-import { HomePage, NewGamePage, GamePage } from './pages';
+import { HomePage, NewGamePage, GamePage, StoryPage } from './pages';
 
 export default function App() {
   return (
@@ -12,6 +12,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/new-game" element={<NewGamePage />} />
           <Route path="/game" element={<GamePage />} />
+          <Route path="/story-mode" element={<StoryPage />} />
         </Routes>
       </div>
       <div className="swapi-people"></div>

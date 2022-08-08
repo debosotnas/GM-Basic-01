@@ -1,6 +1,6 @@
 export default class SwapiData {
-  async getPeople() {
-    const endpoint = 'https://swapi.dev/api/people/1/';
+  static async getPeople() {
+    const endpoint = 'https://swapi.dev/api/people/';
     const res = await fetch(endpoint);
     const data = await res.json();
     console.log(data);

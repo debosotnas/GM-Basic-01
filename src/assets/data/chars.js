@@ -20,7 +20,7 @@ export const FALCON = `
                "---._|J__L|X o~~|[\\\\
                      \\____/ \\___|[//`;
 
-export const HISTORY_DATA = [
+export const STORY_DATA = [
   {
     id: 0,
     title: 'Hace mucho tiempo...',
@@ -304,7 +304,7 @@ export const HISTORY_DATA = [
     `,
   },
   {
-    id: 13,
+    id: 14,
     title: '',
     description:
       '...lo cierto es que estaba conversando con mi amigo R2D2 cuando derrepente usted apareció en su lugar... qué asombrosa situación',
@@ -325,7 +325,7 @@ export const HISTORY_DATA = [
     `,
   },
   {
-    id: 14,
+    id: 15,
     title: 'abc 2',
     description: 'desc 2',
     image: `

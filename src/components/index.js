@@ -1,6 +1,6 @@
 import Box from './Box/Box';
-import HistoryCardContainer from './HistoryCard/Container';
-import HistoryCardList from './HistoryCard/List';
-import HistoryCard from './HistoryCard/Card';
+import StoryCardContainer from './StoryCard/Container';
+import StoryCardList from './StoryCard/List';
+import StoryCard from './StoryCard/Card';
 
-export { Box, HistoryCardContainer, HistoryCardList, HistoryCard };
+export { Box, StoryCardContainer, StoryCardList, StoryCard };
