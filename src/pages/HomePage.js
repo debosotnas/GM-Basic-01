@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import SwapiData from '../api/Swapi.js';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Box } from '../components';
 import { FALCON } from '../assets/data/chars';
+
+import './HomePage.css';
 
 export default function HomePage() {
   const [people, setPeople] = useState([]);
@@ -13,6 +15,11 @@ export default function HomePage() {
     }
     getPeople();
   }, []);
+  const nav = useNavigate();
+
+  const goVersusMode = () => {
+    nav('/new-game');
+  };
 
   return (
     <>
@@ -21,21 +28,33 @@ export default function HomePage() {
           <Box>
             <h2 className="mt-2">¡Elige tu próxima aventura!</h2>
 
-            <div className="adventure-choose-box adventure-left">
+            <div
+              onClick={goVersusMode}
+              className="adventure-choose-box adventure-left"
+            >
               <div className="adventure-circle"></div>
               Modo Versus
             </div>
-            <div className="adventure-choose-box adventure-right">
+            <div
+              onClick={goVersusMode}
+              className="adventure-choose-box adventure-right"
+            >
               <div className="adventure-circle"></div>
               Modo Story
             </div>
-            <div className="adventure-choose-box adventure-left">
+            <div
+              onClick={goVersusMode}
+              className="adventure-choose-box adventure-left"
+            >
               <div className="adventure-circle"></div>
               Modo Arcade
             </div>
-            <div className="adventure-choose-box adventure-right">
+            <div
+              onClick={goVersusMode}
+              className="adventure-choose-box adventure-right"
+            >
               <div className="adventure-circle"></div>
-              Modo-R<span>(random)</span>
+              Modo-R<span>(andom)</span>
             </div>
           </Box>
         </div>

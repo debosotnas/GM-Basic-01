@@ -24,6 +24,7 @@ export default function App() {
           <Route path="/story-mode" element={<StoryPage />} />
         </Routes>
       </div>
+
       <div className="swapi-people"></div>
     </>
   );

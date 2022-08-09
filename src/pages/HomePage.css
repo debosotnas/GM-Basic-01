@@ -1,0 +1,171 @@
+.adventure-choose-box {
+  border: 1px solid #3533acfa;
+  margin: 60px;
+  margin-top: 30px;
+  padding: 20px;
+  min-height: 100px;
+  border-radius: 67px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-size: 30px;
+
+  position: relative;
+}
+
+.adventure-choose-box span {
+  transition-property: color;
+  transition-duration: 0.3s;
+  color: #6177ce;
+}
+
+.adventure-circle {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #3533acfa;
+  z-index: 2;
+
+  top: calc(50% - 70px);
+  border-radius: 50%;
+  background-color: #171669fa;
+  transition: all 0.3s;
+}
+
+.adventure-choose-box:hover {
+  background-image: linear-gradient(to left top, #6109771a, #df37a711);
+  box-shadow: 0 0 20px #0e142b;
+  cursor: pointer;
+  color: tomato;
+  /* border-color: #27e0b256; */
+}
+.adventure-choose-box:hover span {
+  color: tomato;
+}
+
+.adventure-choose-box:hover .adventure-circle {
+  box-shadow: 0 0 20px #10152b;
+  /* border-color: #5bdf9d75; */
+  cursor: pointer;
+}
+
+.adventure-circle::after,
+.adventure-choose-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #6177ce;
+  filter: blur(15px);
+  z-index: 1;
+  opacity: 0;
+}
+.adventure-circle {
+  overflow: hidden;
+}
+.adventure-choose-box.adventure-left .adventure-circle::after {
+  right: 0%;
+  transform: rotate(20deg);
+}
+.adventure-choose-box.adventure-right .adventure-circle::after {
+  right: 100%;
+  transform: rotate(-20deg);
+}
+
+.adventure-choose-box.adventure-left:hover .adventure-circle::after {
+  animation-name: lightMovingFromLeft;
+  animation-duration: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.adventure-choose-box.adventure-right:hover .adventure-circle::after {
+  animation-name: lightMovingFromRight;
+  animation-duration: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.adventure-choose-box.adventure-left::after {
+  transform: rotate(-20deg);
+}
+.adventure-choose-box.adventure-right::after {
+  transform: rotate(20deg);
+}
+
+.adventure-choose-box.adventure-left:hover::after {
+  animation-name: lightMovingFromRight;
+  animation-duration: 0.5s;
+}
+
+.adventure-choose-box.adventure-right:hover::after {
+  animation-name: lightMovingFromLeft;
+  animation-duration: 0.5s;
+}
+
+@keyframes lightMovingFromRight {
+  from {
+    right: 0%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.7;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+    right: 100%;
+  }
+}
+
+@keyframes lightMovingFromLeft {
+  from {
+    right: 100%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.7;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+    right: 0%;
+  }
+}
+
+.adventure-left {
+  padding-left: 50px;
+  text-align: right;
+}
+
+.adventure-right {
+  padding-right: 50px;
+  text-align: left;
+}
+
+.adventure-left .adventure-circle {
+  left: -10px;
+}
+.adventure-right .adventure-circle {
+  right: -10px;
+}
