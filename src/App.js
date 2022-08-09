@@ -11,7 +11,7 @@ export default function App() {
         <div className="row">
           <div className="col text-center logo-wrapper d-flex align-items-center justify-content-center">
             <img
-              src="https://cdn.jsdelivr.net/gh/debosotnas/GM-Basic-01@main/src/assets/imgs/swapi-logo.svg"
+              src="https://raw.githubusercontent.com/debosotnas/GM-Basic-01/037f3a1cc09bf8de34edf98847e77c13c2c46935/src/assets/imgs/swapi-logo.svg"
               alt="swapi batlle logo"
             />
           </div>

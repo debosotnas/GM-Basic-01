@@ -34,6 +34,20 @@ export default function HomePage() {
               className="adventure-choose-box adventure-left"
             >
               <div className="adventure-circle"></div>
+              Modo Story
+            </div>
+            <div
+              onClick={goVersusMode}
+              className="adventure-choose-box adventure-right"
+            >
+              <div className="adventure-circle"></div>
+              Modo Arcade
+            </div>
+            <div
+              onClick={goVersusMode}
+              className="adventure-choose-box adventure-left"
+            >
+              <div className="adventure-circle"></div>
               Modo Versus
             </div>
             <div
@@ -41,21 +55,9 @@ export default function HomePage() {
               className="adventure-choose-box adventure-right"
             >
               <div className="adventure-circle"></div>
-              Modo Story
-            </div>
-            <div
-              onClick={goVersusMode}
-              className="adventure-choose-box adventure-left"
-            >
-              <div className="adventure-circle"></div>
-              Modo Arcade
-            </div>
-            <div
-              onClick={goVersusMode}
-              className="adventure-choose-box adventure-right"
-            >
-              <div className="adventure-circle"></div>
-              Modo-R<span>(andom)</span>
+              <span>
+                Modo-R<i>(andom)</i>
+              </span>
             </div>
           </Box>
         </div>

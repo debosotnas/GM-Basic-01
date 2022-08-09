@@ -2,6 +2,7 @@
   border: 1px solid #3533acfa;
   margin: 60px;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
   min-height: 100px;
   border-radius: 67px;
@@ -13,13 +14,16 @@
 }
 
 .adventure-choose-box.adventure-choose-box.adventure-right {
-  justify-content: start;
+  /* justify-content: start; */
+  justify-content: space-around;
 }
 .adventure-choose-box.adventure-choose-box.adventure-left {
-  justify-content: end;
+  /* justify-content: end; */
+  justify-content: space-around;
 }
 
-.adventure-choose-box span {
+.adventure-choose-box i {
+  font-style: normal;
   transition-property: color;
   transition-duration: 0.3s;
   color: #6177ce;
@@ -45,6 +49,7 @@
   color: tomato;
   /* border-color: #27e0b256; */
 }
+.adventure-choose-box:hover i,
 .adventure-choose-box:hover span {
   color: tomato;
 }
@@ -187,10 +192,41 @@
   );
   padding: 15px;
   border-radius: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   font-size: 4px;
   margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
+.falcon-wrapper::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('https://raw.githubusercontent.com/debosotnas/GM-Basic-01/main/src/assets/imgs/swapi-space.svg');
+  background-size: 50%;
+  transform: translateX(0px);
+  content: '';
+  animation-name: anim-space-falcon;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2.8s;
+}
+
+.falcon-wrapper.move-falcon::after {
+  animation-duration: 0.5s;
+}
+
+@keyframes anim-space-falcon {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-245px);
+  }
+}
+
 .falcon-wrapper pre {
   animation-duration: 4.7s;
   animation-name: moving-falcon;
