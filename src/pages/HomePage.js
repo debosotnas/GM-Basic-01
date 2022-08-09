@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import SwapiData from '../api/Swapi.js';
 import { Link, useNavigate } from 'react-router-dom';
 import { Box } from '../components';
@@ -7,6 +7,7 @@ import { FALCON } from '../assets/data/chars';
 import './HomePage.css';
 
 export default function HomePage() {
+  const falconRef = useRef(null);
   const [people, setPeople] = useState([]);
   useEffect(() => {
     async function getPeople() {
@@ -26,7 +27,7 @@ export default function HomePage() {
       <div className="row">
         <div className="col-md-8">
           <Box>
-            <h2 className="mt-2">¡Elige tu próxima aventura!</h2>
+            <h2 className="mt-2 animate-color">¡Elige tu próxima aventura!</h2>
 
             <div
               onClick={goVersusMode}
@@ -60,10 +61,23 @@ export default function HomePage() {
         </div>
         <div className="col-md-4">
           <Box className="text-center">
-            <div className="pre-icon pre-small mb-3">
+            <div ref={falconRef} className="pre-icon pre-small falcon-wrapper">
               <pre>{FALCON}</pre>
             </div>
-            <Link to="/new-game" className="btn btn-swapi-main">
+            <Link
+              onMouseEnter={() => {
+                if (falconRef) {
+                  falconRef.current.classList.add('move-falcon');
+                }
+              }}
+              onMouseLeave={() => {
+                if (falconRef) {
+                  falconRef.current.classList.remove('move-falcon');
+                }
+              }}
+              to="/new-game"
+              className="btn btn-swapi-main"
+            >
               Comenzar juego Modo-R!
             </Link>
           </Box>

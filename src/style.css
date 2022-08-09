@@ -29,9 +29,31 @@ h1 {
   color: #ffecec;
 }
 h2 {
-  color: #ffd3d3;
+  /* color: #ffd3d3; */
+  color: #63d468;
   text-align: center;
+  font-size: 35px;
+  margin-bottom: 40px;
 }
+h2.animate-color {
+  animation-name: anim-color;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim-color {
+  from {
+    color: #63d468;
+  }
+  50% {
+    color: #63b4d4;
+  }
+  to {
+    color: #d463ce;
+  }
+}
+
 h3,
 h4,
 h5,
@@ -97,10 +119,12 @@ h6 {
   font-size: 6px;
   max-width: 165px;
 }
+/*
 .pre-small {
   font-size: 4px;
   max-width: 110px;
 }
+*/
 .pre-bold pre {
   font-weight: bold;
 }
