@@ -194,7 +194,7 @@ export const STORY_DATA = [
     id: 7,
     title: '',
     description:
-      '...entonces, recordar debes: El miedo es el camino hacia el Lado Oscuro; el miedo lleva a la ira, la ira lleva al odio, y el odio...',
+      '...entonces, recordar debes: <i>El miedo es el camino hacia el Lado Oscuro</i>; el miedo lleva a la ira, la ira lleva al odio, y el odio...',
     image: `
                     __.-._
                     '-._"7'
@@ -208,6 +208,18 @@ export const STORY_DATA = [
     title: '',
     description: '...uhm...',
     image: `
+                    __.-._
+                    '-._"7'
+                    /'.-c
+                    |  /T
+                    _)_/LI
+    `,
+  },
+  {
+    id: 9,
+    title: '',
+    description: '...uhm...',
+    image: `
                      _.-.__     
                     '7"_.-'
                       c-.'\\
@@ -216,7 +228,7 @@ export const STORY_DATA = [
     `,
   },
   {
-    id: 9,
+    id: 10,
     title: '',
     description: 'Oh.. maestro Yoda... ¿Cómo llegó hasta aquí?',
     image: `
@@ -236,10 +248,10 @@ export const STORY_DATA = [
     `,
   },
   {
-    id: 10,
+    id: 11,
     title: '',
     description:
-      'uhm... sorprendido me encuentro, y lo que preguntas parece imposible poder saberlo',
+      'uhm... sorprendido me encuentro, y lo que preguntas imposible de contestar parece',
     image: `
                     __.-._
                     '-._"7'
@@ -249,10 +261,10 @@ export const STORY_DATA = [
     `,
   },
   {
-    id: 11,
+    id: 12,
     title: '',
     description:
-      '...uhm... sin embargo, convencido estoy que el universo ha de respuestas tener',
+      '...uhm... sin embargo, convencido estoy que <i>el universo ha de respuestas tener</i>',
     image: `
                      _.-.__     
                     '7"_.-'
@@ -262,10 +274,10 @@ export const STORY_DATA = [
     `,
   },
   {
-    id: 12,
+    id: 13,
     title: '',
     description:
-      'Me pregunto si este evento tiene relación con el rápido esplendor de hace unos minutos...',
+      'Me pregunto si este evento tiene relación con <b>el rápido resplandor que vimos</b> hace unos minutos...',
     image: `
           /~\\ 
          (O O)
@@ -283,10 +295,10 @@ export const STORY_DATA = [
     `,
   },
   {
-    id: 13,
+    id: 14,
     title: '',
     description:
-      '...lo cierto es que estaba conversando con mi amigo R2D2 cuando derrepente usted apareció en su lugar... qué asombrosa situación',
+      '...lo cierto es que estaba conversando con mi amigo R2D2 <b>cuando derrepente usted apareció</b>...',
     image: `
         _-/~\\ 
       // (· ·)
@@ -304,10 +316,9 @@ export const STORY_DATA = [
     `,
   },
   {
-    id: 14,
+    id: 15,
     title: '',
-    description:
-      '...lo cierto es que estaba conversando con mi amigo R2D2 cuando derrepente usted apareció en su lugar... qué asombrosa situación',
+    description: '...<i>y ¡él ya no está!</i>... qué situación tan misteriosa',
     image: `
           /~\\ 
    \\/    (O O)
@@ -325,7 +336,7 @@ export const STORY_DATA = [
     `,
   },
   {
-    id: 15,
+    id: 16,
     title: 'abc 2',
     description: 'desc 2',
     image: `

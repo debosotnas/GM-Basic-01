@@ -18,18 +18,12 @@ export default function StoryPage() {
   return (
     <>
       <div className="row">
-        <div className="col text-center logo-wrapper d-flex align-items-center justify-content-center">
-          <img
-            src="https://cdn.jsdelivr.net/gh/debosotnas/GM-Basic-01@main/src/assets/imgs/swapi-logo.svg"
-            alt="swapi batlle logo"
-          />
-        </div>
-      </div>
-
-      <div className="row">
         <div className="col">
           <Box>
-            <h2 className="mt-1">Story Mode</h2>
+            <div className="adventure-choose-box active">
+              <div className="adventure-circle story"></div>
+              Modo Story
+            </div>
             <StoryCardContainer></StoryCardContainer>
           </Box>
         </div>

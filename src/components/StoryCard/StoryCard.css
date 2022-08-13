@@ -43,19 +43,28 @@
 }
 
 .history-card-body .desc {
-  font-size: 18px;
-  text-transform: capitalize;
+  font-size: 22px;
+  /* text-transform: capitalize; */
   text-align: center;
   margin-top: 3px;
   padding: 5px;
+  max-width: 450px;
 }
 
-.history-card-body .desc span {
-  display: block;
+.history-card-body .desc i {
+  color: #e270ff;
+  font-style: normal;
+}
+.history-card-body .desc b {
+  color: #70ff77;
+  font-style: normal;
+}
+
+.history-card-body .desc {
   border-top: 1px dashed #f000a069;
-  width: 40px;
-  padding-bottom: 10px;
+  padding-top: 20px;
   margin: auto;
+  margin-top: 20px;
 }
 
 .hide-card {

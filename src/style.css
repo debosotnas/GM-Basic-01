@@ -67,6 +67,9 @@ h6 {
 .logo-wrapper {
   min-height: 150px;
 }
+.logo-wrapper > a {
+  display: contents;
+}
 .logo-wrapper img {
   width: 80%;
   max-width: 500px;

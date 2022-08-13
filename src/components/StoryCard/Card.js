@@ -19,10 +19,10 @@ export default function StoryCard(props) {
         <pre>{props.image}</pre>
       </div>
       {props.description && (
-        <p className="desc">
-          <span></span>
-          {props.description}
-        </p>
+        <p
+          className="desc"
+          dangerouslySetInnerHTML={{ __html: props.description }}
+        ></p>
       )}
     </div>
   );

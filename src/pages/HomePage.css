@@ -40,9 +40,39 @@
   border-radius: 50%;
   background-color: #171669fa;
   transition: all 0.3s;
+  filter: saturate(0.2);
 }
 
-.adventure-choose-box:hover {
+.adventure-circle.story {
+  background-image: url('https://raw.githubusercontent.com/debosotnas/GM-Basic-01/main/src/assets/imgs/icons/01-story.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.adventure-circle.arcade {
+  background-image: url('https://raw.githubusercontent.com/debosotnas/GM-Basic-01/main/src/assets/imgs/icons/02-arcade.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.adventure-circle.versus {
+  background-image: url('https://raw.githubusercontent.com/debosotnas/GM-Basic-01/main/src/assets/imgs/icons/03-versus.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.adventure-circle.random {
+  background-image: url('https://raw.githubusercontent.com/debosotnas/GM-Basic-01/main/src/assets/imgs/icons/04-random.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.adventure-choose-box:hover,
+.adventure-choose-box.active {
   background-image: linear-gradient(to left top, #6109771a, #df37a711);
   box-shadow: 0 0 20px #0e142b;
   cursor: pointer;
@@ -50,14 +80,23 @@
   /* border-color: #27e0b256; */
 }
 .adventure-choose-box:hover i,
-.adventure-choose-box:hover span {
+.adventure-choose-box:hover span,
+.adventure-choose-box.active i,
+.adventure-choose-box.active span {
   color: tomato;
 }
 
-.adventure-choose-box:hover .adventure-circle {
+.adventure-choose-box:hover .adventure-circle,
+.adventure-choose-box.active .adventure-circle {
+  filter: saturate(1);
   box-shadow: 0 0 20px #10152b;
   /* border-color: #5bdf9d75; */
   cursor: pointer;
+}
+
+.adventure-choose-box.active,
+.adventure-choose-box.active .adventure-circle {
+  cursor: default;
 }
 
 .adventure-circle::after,
@@ -160,6 +199,15 @@
     opacity: 0;
     right: 0%;
   }
+}
+
+.adventure-choose-box.active {
+  padding-left: 50px;
+  justify-content: space-around;
+  /* text-align: right; */
+}
+.adventure-choose-box.active .adventure-circle {
+  left: -10px;
 }
 
 .adventure-left {

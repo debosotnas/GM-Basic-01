@@ -22,6 +22,10 @@ export default function HomePage() {
     nav('/new-game');
   };
 
+  const goStoryMode = () => {
+    nav('/story-mode');
+  };
+
   return (
     <>
       <div className="row">
@@ -30,31 +34,31 @@ export default function HomePage() {
             <h2 className="mt-2 animate-color">¡Elige tu próxima aventura!</h2>
 
             <div
-              onClick={goVersusMode}
+              onClick={goStoryMode}
               className="adventure-choose-box adventure-left"
             >
-              <div className="adventure-circle"></div>
+              <div className="adventure-circle story"></div>
               Modo Story
             </div>
             <div
               onClick={goVersusMode}
               className="adventure-choose-box adventure-right"
             >
-              <div className="adventure-circle"></div>
+              <div className="adventure-circle arcade"></div>
               Modo Arcade
             </div>
             <div
               onClick={goVersusMode}
               className="adventure-choose-box adventure-left"
             >
-              <div className="adventure-circle"></div>
+              <div className="adventure-circle versus"></div>
               Modo Versus
             </div>
             <div
               onClick={goVersusMode}
               className="adventure-choose-box adventure-right"
             >
-              <div className="adventure-circle"></div>
+              <div className="adventure-circle random"></div>
               <span>
                 Modo-R<i>(andom)</i>
               </span>
