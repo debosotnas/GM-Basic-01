@@ -66,6 +66,11 @@ export default function HomePage() {
           </Box>
         </div>
         <div className="col-md-4">
+          <Box className="text-center highlight-blue">
+            <Link to="/new-game" className="btn btn-swapi-main">
+              Ir a la tienda
+            </Link>
+          </Box>
           <Box className="text-center">
             <div ref={falconRef} className="pre-icon pre-small falcon-wrapper">
               <pre>{FALCON}</pre>
@@ -93,8 +98,6 @@ export default function HomePage() {
               <li>Ruffo / 10.500</li>
               <li>Sarki / 10.300</li>
               <li>PopDylan / 9.050</li>
-              <li>Roco / 7100</li>
-              <li>Zyppy / 6200</li>
             </ul>
           </Box>
           <Box>
@@ -103,8 +106,6 @@ export default function HomePage() {
               <li>Ruffo / 10.500</li>
               <li>Sarki / 10.300</li>
               <li>PopDylan / 9.050</li>
-              <li>Roco / 7100</li>
-              <li>Zyppy / 6200</li>
             </ul>
           </Box>
         </div>

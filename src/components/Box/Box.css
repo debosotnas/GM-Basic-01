@@ -29,6 +29,19 @@
   box-shadow: 0px 0px 25px #000;
 }
 
+.box.highlight-green {
+  filter: hue-rotate(205deg) brightness(1.95) contrast(1.75);
+}
+.box.highlight-magenta {
+  filter: hue-rotate(45deg) brightness(1.75) contrast(1.75);
+}
+.box.highlight-red {
+  filter: hue-rotate(90deg) brightness(1.75) contrast(1.75);
+}
+.box.highlight-blue {
+  filter: hue-rotate(305deg) brightness(1.95) contrast(1.75);
+}
+
 @property --opacity {
   syntax: '<number>';
   initial-value: 0.5;
