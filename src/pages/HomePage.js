@@ -67,7 +67,7 @@ export default function HomePage() {
         </div>
         <div className="col-md-4">
           <Box className="text-center highlight-blue">
-            <Link to="/new-game" className="btn btn-swapi-main">
+            <Link to="/shop" className="btn btn-swapi-main">
               Ir a la tienda
             </Link>
           </Box>
